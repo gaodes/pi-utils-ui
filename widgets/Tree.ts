@@ -58,14 +58,12 @@ export class Tree implements Component {
     const lines: string[] = [];
     const { theme, rootConnectors = false, dirSuffix = "/" } = this.options;
 
-    for (let i = 0; i < this.roots.length; i++) {
+    for (const [i, node] of this.roots.entries()) {
       const isLast = i === this.roots.length - 1;
-      const node = this.roots[i];
 
       if (rootConnectors) {
         renderChild(node, isLast, [], width, theme, dirSuffix, lines);
       } else {
-        // Root nodes: no connector, just the label
         renderRoot(node, width, theme, dirSuffix, lines);
       }
     }
@@ -90,9 +88,9 @@ function renderRoot(
 
   if (!node.children || node.children.length === 0) return;
 
-  for (let i = 0; i < node.children.length; i++) {
+  for (const [i, child] of node.children.entries()) {
     const isLast = i === node.children.length - 1;
-    renderChild(node.children[i], isLast, [], width, theme, dirSuffix, lines);
+    renderChild(child, isLast, [], width, theme, dirSuffix, lines);
   }
 }
 
@@ -129,20 +127,10 @@ function renderChild(
 
   if (!node.children || node.children.length === 0) return;
 
-  // For children: this node's "hasBar" = we are NOT the last sibling
-  // (meaning there are more siblings below us → continuation bar)
   const childBars = [...ancestorBars, !isLast];
 
-  for (let i = 0; i < node.children.length; i++) {
+  for (const [i, child] of node.children.entries()) {
     const childIsLast = i === node.children.length - 1;
-    renderChild(
-      node.children[i],
-      childIsLast,
-      childBars,
-      width,
-      theme,
-      dirSuffix,
-      lines,
-    );
+    renderChild(child, childIsLast, childBars, width, theme, dirSuffix, lines);
   }
 }
