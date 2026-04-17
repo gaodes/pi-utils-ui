@@ -6,7 +6,7 @@
   "license": "MIT",
   "description": "Shared TUI abstractions for Pi extensions",
   "exports": {
-    ".": "./index.ts"
+    ".": "./src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -17,10 +17,7 @@
     "provenance": true
   },
   "files": [
-    "*.ts",
-    "tools",
-    "widgets",
-    "primitives",
+    "src",
     "README.md"
   ],
   "scripts": {
@@ -29,6 +26,7 @@
     "format": "biome check --write .",
     "test": "vitest run --passWithNoTests",
     "test:watch": "vitest --passWithNoTests",
+    "dev:showcase": "tsx showcase/index.ts",
     "changeset": "changeset",
     "version": "changeset version",
     "release": "pnpm changeset publish"
@@ -49,9 +47,10 @@
     "@aliou/biome-plugins": "^0.4.0",
     "@biomejs/biome": "^2.4.3",
     "@changesets/cli": "^2.27.11",
-    "@mariozechner/pi-coding-agent": "0.65.0",
-    "@mariozechner/pi-tui": "0.65.0",
+    "@mariozechner/pi-coding-agent": "0.67.6",
+    "@mariozechner/pi-tui": "0.67.6",
     "@types/node": "^25.0.10",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "vitest": "^4.0.18"
   },
