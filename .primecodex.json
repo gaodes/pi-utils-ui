@@ -1,0 +1,5 @@
+{
+  "enabled": true,
+  "source": "ssh://git@gitlab-ssh.elches.dev:2222/agents/primecodex/extensions/pi-utils-ui.git",
+  "description": "Shared TUI component library for Pi extensions — tool headers/bodies/footers, containers, data tables, navigation, feedback widgets, and layout primitives."
+}
