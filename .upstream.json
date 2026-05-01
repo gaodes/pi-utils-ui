@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-01",
+  "primary": {
+    "name": "@aliou/pi-utils-ui",
+    "type": "npm",
+    "url": "npm:@aliou/pi-utils-ui",
+    "repo": "https://github.com/aliou/pi-utils-ui",
+    "license": "MIT",
+    "relationship": "fork",
+    "upstreamVersion": "0.2.1"
+  }
+}
