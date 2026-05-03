@@ -1,4 +1,22 @@
-# @aliou/pi-utils-ui
+# @gaodes/pi-utils-ui
+
+> This is a fork of [@aliou/pi-utils-ui](https://github.com/aliou/pi-utils-ui) by [Aliou DIA](https://github.com/aliou).
+> All versions prior to 0.3.0 are credited to the original author.
+
+## 0.3.1 - 2026-05-03
+
+### Changed
+
+- Point package metadata and npm README links at the public `gaodes/pi-utils-ui` GitHub mirror.
+- Update README import example to use `@gaodes/pi-utils-ui`.
+- Include `CHANGELOG.md` in the published package.
+
+## 0.3.0 - 2026-05-01
+
+### Changed
+
+- Renamed package from `@aliou/pi-utils-ui` to `@gaodes/pi-utils-ui`
+- Published under `@gaodes` npm scope
 
 ## 0.2.0
 
