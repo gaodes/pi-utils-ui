@@ -1,8 +1,15 @@
 ![banner](https://assets.aliou.me/pi-extensions/banners/pi-utils-ui.png)
 
-# @aliou/pi-utils-ui
+# @gaodes/pi-utils-ui
+
+> **Fork of [@aliou/pi-utils-ui](https://github.com/aliou/pi-utils-ui)** by [Aliou DIA](https://github.com/aliou) — MIT License
+>
+> This fork is maintained by [El Che](https://github.com/gaodes) under the `@gaodes` npm scope.
+> The original project and author retain full credit for their work.
 
 Internal shared TUI abstractions for Pi extensions.
+
+[**Source**](https://github.com/gaodes/pi-utils-ui) · [**npm**](https://www.npmjs.com/package/@gaodes/pi-utils-ui) · [**Upstream**](https://github.com/aliou/pi-utils-ui)
 
 ## Modules
 
@@ -20,5 +27,5 @@ import {
   ToolCallListField,
   MarkdownResponseField,
   createRenderCache,
-} from "@aliou/pi-utils-ui";
+} from "@gaodes/pi-utils-ui";
 ```
